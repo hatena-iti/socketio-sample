@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title><%= title %></title>
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="jumbotron">
+		<h1>
+			<span class="glyphicon glyphicon-comment">Socket.IOサンプル</span>
+		</h1>
+	</div>
+	<div class="container">
+		<h2>ログイン</h2>
+		<div class="form-group">
+			<form action="/chat" method="post">
+				<div class="col-lg-6">
+					<div class="input-group">
+						<span class="input-group-addon">ユーザー名</span>
+						<input type="text" name="username" class="form-control" placeholder="ユーザー名" required autofocus maxlength="10">
+						<span class="input-group-btn">
+							<button class="btn btn-success" type="submit">
+								<span class="glyphicon glyphicon-log-in"> ログイン</span>
+							</button>
+						</span>
+					</div>
+					<!-- /input-group -->
+				</div>
+				<!-- /.col-lg-6 -->
+			</form>
+		</div>
+	</div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</body>
+</html>
